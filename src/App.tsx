@@ -9,9 +9,10 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="/Tv" element={<Tv />} />
         <Route path="/Search" element={<Search />} />
+        <Route path="/" element={<Home />} />
+        {/* /만 있는 path는 제일 처음에 넣으면 안되고 제일 마지막에 넣어야 함 */}
       </Routes>
     </Router>
   );
